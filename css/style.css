@@ -32,6 +32,21 @@ h1 {
   margin-bottom: 1.5rem;
   font-size: 4rem;
   letter-spacing: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    h1 {
+      font-size: 3.5rem; } }
+
+.info {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif; }
+  .info__text {
+    color: #ccc;
+    background-color: orangered;
+    font-size: 1.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .info__text {
+        font-size: 1rem; } }
 
 /* Loader */
 .loader {
@@ -49,10 +64,12 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.info {
-  display: flex;
-  justify-content: center;
-  font-family: Arial, Helvetica, sans-serif; }
-  .info__text {
-    color: #ccc;
-    background-color: orangered; }
+.image-container {
+  margin: 1rem 30%; }
+  @media only screen and (max-width: 37.5em) {
+    .image-container {
+      margin: 1rem; } }
+
+.image-container img {
+  margin-top: 1rem;
+  width: 100%; }
