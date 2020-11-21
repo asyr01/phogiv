@@ -8,7 +8,7 @@ let photosArray = [];
 
 // Unsplash API
 
-const count = 30;
+let count = 5;
 const apiKey = '';
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
@@ -18,8 +18,9 @@ function imageLoaded() {
   imagesLoaded++;
   if(imagesLoaded === totalImages) {
     ready = true; 
-    // for first time, so we will have an illussion like forever loading..
+    // for first time, so we will have an illussion like forever.
     laoder.hidden = true;
+    count = 30;
     console.log('ready =', ready);
   } else {
     ready = false;
