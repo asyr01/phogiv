@@ -78,7 +78,7 @@ async function getPhotos() {
 // Check to see if scroilling near bottom of page, if it is load more photos.
 window.addEventListener('scroll', () => {
   if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ready === true) {
-    ready = false;
+    ready = false; // not ready to load more photos.
     getPhotos();
   }
 })
